@@ -38,7 +38,7 @@
                   <power-line-frequency property="PowerLineFrequency" value="2"/>
                   <saturation property="Saturation" value="32"/>
                   <sharpness property="Sharpness" value="24"/>
-                  <white-balance property="WhiteBalance" value="6000" auto="true"/>
+                  <white-balance property="WhiteBalance" value="6460" auto="true"/>
                   <zoom property="Zoom"/>
                </camera>
             </cameras>
@@ -84,7 +84,7 @@
             <power-line-frequency property="PowerLineFrequency" value="2"/>
             <saturation property="Saturation" value="34"/>
             <sharpness property="Sharpness" value="50"/>
-            <white-balance property="WhiteBalance" value="6460" auto="true"/>
+            <white-balance property="WhiteBalance" value="6760" auto="true"/>
             <zoom property="Zoom"/>
          </camera>
       </cameras>
@@ -422,8 +422,8 @@
             <text><![CDATA[G92 X0 Y0 Z0]]></text>
          </command>
          <command type="MOVE_TO_COMMAND">
-            <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:A%.4f} F{FeedRate:%.0f}]]></text>
-            <text><![CDATA[;G0 {X:X%.4f} {Y:Y%.4f}  {Rotation:A%.4f} F{FeedRate:%.0f}]]></text>
+            <text><![CDATA[;G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {Rotation:A%.4f} F{FeedRate:%.0f}]]></text>
+            <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f}  {Rotation:A%.4f} F{FeedRate:%.0f}]]></text>
          </command>
          <command type="MOVE_TO_COMPLETE_REGEX">
             <text><![CDATA[.*stat:3.*]]></text>
@@ -492,11 +492,6 @@
             <axis name="y" type="Y" home-coordinate="0.0">
                <head-mountable-ids class="java.util.HashSet">
                   <string>*</string>
-               </head-mountable-ids>
-            </axis>
-            <axis name="z" type="Z" home-coordinate="0.0">
-               <head-mountable-ids class="java.util.HashSet">
-                  <string>N1</string>
                </head-mountable-ids>
             </axis>
             <axis name="rotation" type="Rotation" home-coordinate="0.0">
